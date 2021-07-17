@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--8y7dr4zugpta$wr+%7w0qs%teurhvme%r0+$z+hweav+$k82d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['donguriyokocho.com']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'blogapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django_db',
+        'USER': 'db_ixtab',
+        'PASSWORD': 'Ixtab191@',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
